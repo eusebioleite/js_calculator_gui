@@ -2,6 +2,9 @@
 
 jscalc is a simple JavaScript calculator web application that allows users to perform basic arithmetic operations.
 
+![image](https://github.com/eusebioleite/js_calculator_gui/assets/43001205/02081340-58f4-4b2f-985d-04c0bb664c84)
+
+
 ## Features
 
 - Addition (+)
