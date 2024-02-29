@@ -4,153 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>jscalc</title>
-    <style>
-        button {
-            display: inline-block;
-            width: 50px;
-            height: 50px;
-            margin: 0;
-            padding: 0;
-        }
-
-        #first_row, #second_row, #third_row, #fourth_row {
-            display: flex;
-            margin: 0;
-            padding: 0;
-        }
-
-        #textarea {
-            height: 50px;
-            width: 193px;
-            line-height: 3;
-            resize: none;
-            overflow: hidden;
-            text-align: start;
-            background-color: rgb(239, 239, 239);
-        }
-    </style>
-    <script>
-
-        function add_text(id) {
-            
-            switch(id){
-                case "btn_1":
-                    var textarea = document.getElementById('textarea');
-                    textarea.value += 1;
-                    break;
-
-                case "btn_2":
-                    var textarea = document.getElementById('textarea');
-                    textarea.value += 2;
-                    break;
-
-                case "btn_3":
-                    var textarea = document.getElementById('textarea');
-                    textarea.value += 3;
-                    break;
-
-                case "btn_4":
-                    var textarea = document.getElementById('textarea');
-                    textarea.value += 4;
-                    break;
-
-                case "btn_5":
-                    var textarea = document.getElementById('textarea');
-                    textarea.value += 5;
-                    break;
-
-                case "btn_6":
-                    var textarea = document.getElementById('textarea');
-                    textarea.value += 6;
-                    break;
-
-                case "btn_7":
-                    var textarea = document.getElementById('textarea');
-                    textarea.value += 7;
-                    break;
-
-                case "btn_8":
-                    var textarea = document.getElementById('textarea');
-                    textarea.value += 8;
-                    break;
-
-                case "btn_9":
-                    var textarea = document.getElementById('textarea');
-                    textarea.value += 9;
-                    break;
-
-                case "btn_0":
-                    var textarea = document.getElementById('textarea');
-                    textarea.value += 0;
-                    break;
-
-                case "btn_div":
-                    var textarea = document.getElementById('textarea');
-                    textarea.value += "/";
-                    break;
-
-                case "btn_mul":
-                    var textarea = document.getElementById('textarea');
-                    textarea.value += "*";
-                    break;
-
-                case "btn_sub":
-                    var textarea = document.getElementById('textarea');
-                    textarea.value += "-";
-                    break;
-
-                case "btn_add":
-                    var textarea = document.getElementById('textarea');
-                    textarea.value += "+";
-                    break;
-
-                case "btn_enter":
-                    var textarea = document.getElementById('textarea');
-                    formula = eval(textarea.value);
-                    textarea.value = formula;
-                    break;
-
-                case "btn_clear":
-                    var textarea = document.getElementById('textarea');
-                    textarea.value = "";
-                    break;
-
-            }
-
-        }
-
-    </script>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div id="main">
         <textarea id="textarea" rows="1" cols="1"></textarea>
         <div id="buttons">
             <div id="first_row">
-                <button id="btn_1" type="button" onclick="add_text(this.id)">1</button>
-                <button id="btn_2" type="button" onclick="add_text(this.id)">2</button>
-                <button id="btn_3" type="button" onclick="add_text(this.id)">3</button>
-                <button id="btn_div" type="button" onclick="add_text(this.id)">/</button>
+                <button id="btn_1" type="button">1</button>
+                <button id="btn_2" type="button">2</button>
+                <button id="btn_3" type="button">3</button>
+                <button id="btn_div" type="button">/</button>
             </div>
             <div id="second_row">
-                <button id="btn_4" type="button" onclick="add_text(this.id)">4</button>
-                <button id="btn_5" type="button" onclick="add_text(this.id)">5</button>
-                <button id="btn_6" type="button" onclick="add_text(this.id)">6</button>
-                <button id="btn_mul" type="button" onclick="add_text(this.id)">*</button>
+                <button id="btn_4" type="button">4</button>
+                <button id="btn_5" type="button">5</button>
+                <button id="btn_6" type="button">6</button>
+                <button id="btn_mul" type="button">*</button>
             </div>
             <div id="third_row">
-                <button id="btn_7" type="button" onclick="add_text(this.id)">7</button>
-                <button id="btn_8" type="button" onclick="add_text(this.id)">8</button>
-                <button id="btn_9" type="button" onclick="add_text(this.id)">9</button>
-                <button id="btn_sub" type="button" onclick="add_text(this.id)">-</button>
+                <button id="btn_7" type="button">7</button>
+                <button id="btn_8" type="button">8</button>
+                <button id="btn_9" type="button">9</button>
+                <button id="btn_sub" type="button">-</button>
             </div>
             <div id="fourth_row">
-                <button id="btn_enter" type="button" onclick="add_text(this.id)">E</button>
-                <button id="btn_0" type="button" onclick="add_text(this.id)">0</button>
-                <button id="btn_clear" type="button" onclick="add_text(this.id)">C</button>
-                <button id="btn_add" type="button" onclick="add_text(this.id)">+</button>
+                <button id="btn_enter" type="button">E</button>
+                <button id="btn_0" type="button">0</button>
+                <button id="btn_clear" type="button">C</button>
+                <button id="btn_add" type="button">+</button>
             </div>
         </div>
     </div>
-    </body>
-    </html>
-    
+    <script src="script.js"></script>
+</body>
+</html>
